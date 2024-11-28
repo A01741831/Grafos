@@ -13,7 +13,10 @@ class MyGraph
     public:
         MyGraph(vector<vector<int>>& matriz);
         void loadGraph(vector<vector<int>>& matriz);
-        void DFS();
-        void BFS();
+        bool isTree();
+        void topologicalSort();
+        bool bipartiteGraph();
+        //void DFS();
+        //void BFS();
 };
 #endif
